@@ -1,0 +1,16 @@
+[
+  {
+    "name": "DemoPlugin",
+    "version": "0.0.0",
+    "class": "DemoPlugin",
+    "requires": [
+      {
+        "@twilio/flex-ui": "^1"
+      }
+    ],
+    "foo": "qux",
+    "src": "http://localhost:8080/plugin-demo.js"
+  }
+]
+
+
