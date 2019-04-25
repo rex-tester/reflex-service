@@ -1,5 +1,15 @@
 [
   {
+    "name": "AdminPlugin",
+    "version": "0.0.0",
+    "class": "AdminPLugin",
+      "requires": [
+        {
+          "@twilio/flex-admin": "^1"
+        }
+      ]
+  },
+  {
     "name": "DemoPlugin",
     "version": "0.0.0",
     "class": "DemoPlugin",
