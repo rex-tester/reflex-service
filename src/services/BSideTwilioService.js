@@ -1,4 +1,6 @@
 import * as React from 'react';
+import * as Twilio from 'twilio';
+
 
 export const API_ENDPOINTS = (options) => {
     const cdns = {
@@ -30,6 +32,9 @@ export default class TwilioBServices extends React.Component {
         result: void 0
     };
 
+    componentDidMount() {
+
+    }
 
     async Tokens(options) {
 
@@ -38,7 +43,7 @@ export default class TwilioBServices extends React.Component {
         const bs64Cred = btoa(this.state.apiKey + ":" + this.state.apiSecret);
         const url = API_ENDPOINTS(this.props.manager.configuration.sso.accountSid);
 
-        const result = await fetch( url, {
+        const result = await fetch(url, {
             method: "POST",
             headers: [
                 "Authorization: " + bs64Cred
